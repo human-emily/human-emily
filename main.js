@@ -88,11 +88,11 @@ global.ytch = "Mr Unique Hacker";
 // Add this near the top of main.js with other global configurations
 const channelInfo = {
     contextInfo: {
-        forwardingScore: 999,
-        isForwarded: true,
+        forwardingScore: 000,
+        isForwarded: false,
         forwardedNewsletterMessageInfo: {
             newsletterJid: '120363161513685998@newsletter',
-            newsletterName: 'KnightBot MD',
+            newsletterName: 'McRans bot',
             serverMessageId: -1
         }
     }
@@ -157,7 +157,7 @@ async function handleMessages(sock, messageUpdate, printLog) {
             return;
         } */
 
-        if (!message.key.fromMe) incrementMessageCount(chatId, senderId);
+        
 
         // Check for bad words FIRST, before ANY other processing
         if (isGroup && userMessage) {
